@@ -2,53 +2,278 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Teboho Xaba</title>
     <link rel="stylesheet" href="style.css" />
     <script defer src="script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/c8e4d183c2.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <nav>
-      <div class="logo">Teboho Xaba</div>
-      <ul class="nav-links">
-        <li><a href="#about" class="nav-item">Languages</a></li>
-        <li><a href="#about" class="nav-item">Projects</a></li>
-        <li><a href="#about" class="nav-item">Contact</a></li>
-      </ul>
-    </nav>
+    <section id="about">
+      <nav>
+        <div class="personal_logo">Teboho Xaba</div>
+        <ul class="nav-links">
+          <li>
+            <a
+              href="#Languages"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              >Languages</a
+            >
+          </li>
+          <li>
+            <a
+              href="#Projects"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a
+              href="#Contacts"
+              class="nav__link--anchor nav__link--anchor--primary"
+              >Contacts</a
+            >
+          </li>
+        </ul>
 
-    <div class="hero">
-      <img src="" alt="my image" class="self" />
-      <h2>Hello, I'm <span>Teboho Xaba</span></h2>
-      <p>
-        I'm a <span>software engineer</span> with a great passion for web
-        design, web development and responsive web applications
-      </p>
-      <div class="hero-img">
-        <img src="" alt="illustration" />
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </nav>
+
+      <div class="flex flex-1">
+        <div class="about-me__info row">
+          <div class="about-me__info--container">
+            <figure class="about-me__pic--mask">
+              <img src="assets/Me.jpg" class="about-me__picture" alt="" />
+            </figure>
+            <h1 class="about-me__info--title">
+              Hello, I'm <span class="text-blue">Teboho Xaba</span>
+            </h1>
+            <p class="about-me__para">
+              I'm a
+              <strong class="text-blue">frontend software engineer</strong> with
+              a great passion for web design, web development and responsive web
+              applications.
+            </p>
+            <div class="about-links">
+              <a href="" class="about-me__link">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="" class="about-me__link">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="" class="about-me__link">
+                <i class="far fa-envelope"></i>
+              </a>
+              <a href="" class="about-me__link">
+                <i class="fas fa-file"></i>
+              </a>
+            </div>
+          </div>
+          <figure class="about-me__img--container">
+            <img src="assets/undraw.png" class="about-me__img" alt="" />
+          </figure>
+        </div>
       </div>
-    </div>
+    </section>
 
-    <div id="stack">
-      <h2>This is my <span>technology stack</span></h2>
-      <img src="" alt="html logo" /><img src="" alt="css logo" /><img
-        src=""
-        alt="javascript logo"
-      /><img src="" alt="tailwind logo" /><img src="" alt="material logo" /><img
-        src=""
-        alt="react logo"
-      /><img src="" alt="node logo" />
-    </div>
+    <section id="Languages">
+      <div class="container">
+        <div class="row">
+          <h1 class="section__title">
+            This is my <span class="text-blue">technology stack</span>
+          </h1>
+          <div class="language__list">
+            <div class="language">
+              <figure class="language__img--wrapper">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png"
+                  alt="Html Logo"
+                  class="language__img"
+                />
+              </figure>
+              <span class="language__name">HTML</span>
+            </div>
+            <div class="language">
+              <figure class="language__img--wrapper">
+                <img
+                  src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png"
+                  alt="CSS Logo"
+                  class="language__img"
+                />
+              </figure>
+              <span class="language__name">CSS</span>
+            </div>
+            <div class="language">
+              <figure class="language__img--wrapper">
+                <img
+                  src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png"
+                  alt="JavaScript Logo"
+                  class="language__img"
+                />
+              </figure>
+              <span class="language__name">JavaScript</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <div id="projects">
-      <h2>Here are some of my <span>projects</span></h2>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
+    <section id="Projects">
+      <div class="container">
+        <div class="row">
+          <h1 class="section__title">
+            Here are some of my <span class="text-blue">projects</span>
+          </h1>
+          <ul class="project__list">
+            <li class="project">
+              <div class="project__wrapper">
+                <img
+                  src="assets/Music-player.PNG"
+                  class="project__img"
+                  alt="Music Player project"
+                />
+                <div class="project__description">
+                  <h3 class="project__description--title">
+                    Music Player project
+                  </h3>
+                  <h4 class="project__description--sub-title">
+                    Html, CSS, JavaScript
+                  </h4>
+                  <p class="project__description--para">
+                    A simple music player app which allows the user to play,
+                    pause, seek and go for the to the next song or back to the
+                    previous one.
+                  </p>
+                  <div class="project__description--links">
+                    <a
+                      href="https://github.com/Teboho-Xaba/music-player"
+                      target="_blank"
+                      class="project__description--link"
+                    >
+                      <i class="fab fa-github"></i>
+                    </a>
+                    <a
+                      href="https://teboho-xaba.github.io/music-player/"
+                      class="project__description--link"
+                    >
+                      <i class="fas fa-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="project">
+              <div class="project__wrapper">
+                <img
+                  src="assets/Calculator.PNG"
+                  class="project__img"
+                  alt="Calculator project"
+                />
+                <div class="project__description">
+                  <h3 class="project__description--title">
+                    Calculator project
+                  </h3>
+                  <h4 class="project__description--sub-title">
+                    Html, CSS, JavaScript
+                  </h4>
+                  <p class="project__description--para">
+                    A simple and convenient calculator app that allows for all
+                    the basic calculator functionalities for your needs.
+                  </p>
+                  <div class="project__description--links">
+                    <a
+                      href="https://github.com/Teboho-Xaba/Calculator"
+                      target="_blank"
+                      class="project__description--link"
+                    >
+                      <i class="fab fa-github"></i>
+                    </a>
+                    <a
+                      href="https://teboho-xaba.github.io/Calculator/"
+                      class="project__description--link"
+                    >
+                      <i class="fas fa-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="project">
+              <div class="project__wrapper">
+                <img
+                  src="assets/BlackJack.PNG"
+                  class="project__img"
+                  alt="Black jack project"
+                />
+                <div class="project__description">
+                  <h3 class="project__description--title">
+                    Black Jack project
+                  </h3>
+                  <h4 class="project__description--sub-title">
+                    Html, CSS, JavaScript
+                  </h4>
+                  <p class="project__description--para">
+                    One of gamblers' worst nightmares - Blackjack. A game where
+                    the user has to obtain cards that add up to 21 to score a
+                    "Blackjack" and win the game.
+                  </p>
+                  <div class="project__description--links">
+                    <a
+                      href="https://github.com/Teboho-Xaba/Black-jack1"
+                      target="_blank"
+                      class="project__description--link"
+                    >
+                      <i class="fab fa-github"></i>
+                    </a>
+                    <a
+                      href="https://teboho-xaba.github.io/Black-jack1/"
+                      class="project__description--link"
+                    >
+                      <i class="fas fa-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-    <footer></footer>
+    <footer id="Contacts">
+      <div class="row footer__row">
+        <a href="#" class="footer__anchor">
+          <figure class="footer__logo">
+            <img
+              src="./assets/LogoSample_ByTailorBrands.jpg"
+              class="footer__logo--img"
+              alt=""
+            />
+          </figure>
+          <span class="footer__logo--popper">
+            Top
+            <i class="fas fa-arrow-up"></i>
+          </span>
+        </a>
+        <div class="footer__social--list">
+          <a
+            href="assets/The Resume.pdf"
+            target="_blank"
+            class="footer__social--link link__hover-effect link__hover-effect--white"
+            target="_blank"
+            >Resume</a
+          >
+        </div>
+        <div class="footer__copyright">Copyright © 2022 Teboho Xaba</div>
+      </div>
+    </footer>
   </body>
 </html>
