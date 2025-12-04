@@ -450,10 +450,15 @@ footer {
   opacity: 1;
 }
 
-/* Small phones, tablets, large smartphones */
+/* Media Queries */
 @media (max-width: 768px) {
   nav {
+    backdrop-filter: blur(8px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 100000;
     height: 68px;
+    position: sticky;
+    top: 0;
   }
 
   h1 {
